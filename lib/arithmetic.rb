@@ -64,6 +64,8 @@ module Arithmetic
       else
         self.amount < element.convert_to(self.currency).amount
       end
+    elsif element.is_a? Numeric
+      self.amount == element
     else
       raise TypeError, "#{self.class.name} couldn't be compared with #{element.class.name}"
     end
@@ -77,6 +79,8 @@ module Arithmetic
       else
         self.amount == element.convert_to(self.currency).amount
       end
+    elsif element.is_a? Numeric
+      self.amount == element
     else
       raise TypeError, "#{self.class.name} couldn't be compared with #{element.class.name}"
     end

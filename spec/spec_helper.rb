@@ -96,6 +96,7 @@ RSpec.configure do |config|
   # as the one that triggered the failure.
   Kernel.srand config.seed
 =end
-  ENV["RAILS_ENV"] ||= 'test'
-  require File.expand_path("../happy_money/config/environment", __FILE__)
+  ENV['RAILS_ENV'] ||= 'test'
+
+  require File.expand_path("../happy_money/config/environment.rb", __FILE__)
 end

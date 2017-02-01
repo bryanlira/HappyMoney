@@ -22,6 +22,13 @@ After that, execute the next command to import the migrations to your project
 Then, run the migration command, so you can start using the HappyMoney gem :D
 
     rake db:migrate
+    
+ ### Note
+ 
+To run the Rspec tests, follow the next commands:
+
+    rake db:create RAILS_ENV=test 
+    rake db:migrate RAILS_ENV=test 
 
  ### Usage
  
