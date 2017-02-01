@@ -13,7 +13,7 @@
  
 First of all you need to add the gem to an existence project with the following command. The path is the location where the gem is located: 
 
-    gem 'happy_money', path: '../../Desktop/happy_money'
+    gem 'happy_money'
 
 After that, execute the next command to import the migrations to your project
 
