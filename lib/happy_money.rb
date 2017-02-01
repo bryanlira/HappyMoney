@@ -1,4 +1,4 @@
-require "happy_money/engine"
+require 'happy_money/engine'
 
 module HappyMoney
 end

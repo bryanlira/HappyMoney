@@ -1,0 +1,20 @@
+{
+  "EUR": {
+    "iso_code": "EUR",
+    "name": "Euro",
+    "symbol": "€",
+    "iso_number": "978"
+  },
+  "USD": {
+    "iso_code": "USD",
+    "name": "United States Dollar",
+    "symbol": "$",
+    "iso_number": "840"
+  },
+  "MXN": {
+    "iso_code": "MXN",
+    "name": "Mexican Peso",
+    "symbol": "$",
+    "iso_number": "484"
+  }
+}
