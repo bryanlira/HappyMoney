@@ -9,9 +9,8 @@ Gem::Specification.new do |s|
   s.version     = HappyMoney::VERSION
   s.authors     = ["bryan"]
   s.email       = ["bryanx5163@gmail.com"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of HappyMoney."
-  s.description = "TODO: Description of HappyMoney."
+  s.summary       = 'HappyMoney gem integration with Rails'
+  s.description   = 'This library provides integration of HappyMoney gem with Rail'
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
