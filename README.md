@@ -9,9 +9,9 @@
   a monetary unit.
 - Provides with arithmetic and comparison operations such as / * - + > <
  
- ### Instalation
+### Installation
  
-First of all you need to add the gem to an existence project with the following command. The path is the location where the gem is located: 
+First of all you need to download the gem to and add it to an existence project with the following command. The path is the location where the gem is located: 
 
     gem 'happy_money', path: '../../Desktop/happy_money'
 
@@ -23,14 +23,14 @@ Then, run the migration command, so you can start using the HappyMoney gem :D
 
     rake db:migrate
     
- ### Note
+### Note
  
 To run the Rspec tests, follow the next commands:
 
     rake db:create RAILS_ENV=test 
     rake db:migrate RAILS_ENV=test 
 
- ### Usage
+### Usage
  
  ``` ruby
  #Instantiate money objects:

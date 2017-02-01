@@ -29,9 +29,13 @@ module HappyMoney
 
     # Returns a new Money object containing the new amount and the new currency
     def convert_to(new_currency)
-      currency_rate = get_currency_rate(new_currency)
-      unless currency_rate == 'no_value'
-        self.class.new(self.amount * currency_rate, new_currency)
+      if new_currency == self.currency
+        self
+      else
+        currency_rate = get_currency_rate(new_currency)
+        unless currency_rate == 'no_value'
+          self.class.new(self.amount * currency_rate, new_currency)
+        end
       end
     end
 
