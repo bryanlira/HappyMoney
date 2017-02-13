@@ -3,7 +3,7 @@ describe HappyMoney::Money do
   describe '#convert_to' do
     it 'exchanges the amount properly' do
       other = HappyMoney::Money.new(90, 'EUR')
-      expect(other.convert_to('USD')).to eq HappyMoney::Money.new(97.2, 'USD')
+      expect(other.convert_to('USD')).to eq HappyMoney::Money.new(95.4, 'USD')
     end
 
     it 'does no exchange when the currencies are the same' do
@@ -63,8 +63,8 @@ describe HappyMoney::Money do
     end
     it 'converts other object amount to current currency and adds other amount to current amount (different currency)' do
       other = HappyMoney::Money.new(90, 'EUR')
-      expect(other.convert_to('USD')).to eq HappyMoney::Money.new(97.2, 'USD')
-      expect(HappyMoney::Money.new(10, 'USD') + other).to eq HappyMoney::Money.new(107.2, 'USD')
+      expect(other.convert_to('USD')).to eq HappyMoney::Money.new(95.4, 'USD')
+      expect(HappyMoney::Money.new(10, 'USD') + other).to eq HappyMoney::Money.new(105.4, 'USD')
     end
   end
 
@@ -74,8 +74,8 @@ describe HappyMoney::Money do
     end
     it 'converts other object amount to current currency and subtracts other amount from current amount (different currency)' do
       other = HappyMoney::Money.new(5, 'EUR')
-      expect(other.convert_to('USD')).to eq HappyMoney::Money.new(5.4, 'USD')
-      expect(HappyMoney::Money.new(50, 'USD') - other).to eq HappyMoney::Money.new(44.6, 'USD')
+      expect(other.convert_to('USD')).to eq HappyMoney::Money.new(5.3, 'USD')
+      expect(HappyMoney::Money.new(50, 'USD') - other).to eq HappyMoney::Money.new(44.7, 'USD')
     end
   end
 

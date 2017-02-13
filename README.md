@@ -1,6 +1,5 @@
 # RubyHappyMoney - HappyMoney 
 
-
 ### Features
 
 - Provides a `HappyMoney::Money` class which encapsulates all information about an certain
@@ -11,7 +10,7 @@
  
 ### Installation
  
-First of all you need to download the gem to and add it to an existence project with the following command. The path is the location where the gem is located: 
+First of all you need to download the engine and add it to an existence project with the following command. The path is the location where the engine is located: 
 
     gem 'happy_money', path: '../../Desktop/happy_money'
 
@@ -19,16 +18,28 @@ After that, execute the next command to import the migrations to your project
 
     rake happy_money:install:migrations   
     
-Then, run the migration command, so you can start using the HappyMoney gem :D
+Then, run the migration command, so you can start using the HappyMoney engine :D
 
     rake db:migrate
     
-### Note
+### Run Rspec Tests
  
-To run the Rspec tests, follow the next commands:
+To run the Rspec tests, you should be on the engine path
+
+    [~/Desktop/happy_money]$     
+
+Then, follow the next commands to create the test database:
 
     rake db:create RAILS_ENV=test 
-    rake db:migrate RAILS_ENV=test 
+    rake db:migrate RAILS_ENV=test
+     
+Finally, you will be able to run the Rspec tests by using this command:
+      
+    bundle exec rspec  
+    
+### Note
+    
+This engine consumes a web service to perform the currency conversion (http://free.currencyconverterapi.com), which affects the results of the tests and of the given examples.
 
 ### Usage
  
